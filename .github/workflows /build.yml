@@ -1,0 +1,22 @@
+name: hr_salary_app
+description: An HR salary calculator app with Google Drive upload built using Kivy
+version: 1.0.0
+main: main.py
+
+dependencies:
+  - python=3.10
+  - kivy
+  - google-api-python-client
+  - google-auth
+  - google-auth-oauthlib
+  - setuptools
+  - pip:
+      - buildozer
+
+android:
+  permissions:
+    - INTERNET
+  icon: icon.png
+  package:
+    name: HRSalaryApp
+    domain: org.yourname
